@@ -2,11 +2,11 @@
   "name": "deployment",
   "version": "1.0.0",
   "description": "",
-  "main": "server.ts",
+  "main": "dist/server.js",
   "scripts": {
-    
-    "start": "nodemon server.ts",
-    "stage":"tsc && git status && git add ."
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon server.ts"
   },
   "dependencies": {
     "dotenv": "^17.3.1",
